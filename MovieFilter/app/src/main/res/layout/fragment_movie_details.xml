@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context="com.medha.moviefilter.MovieDetailsFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        app:srcCompat="@drawable/sample_0"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="Title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:paddingBottom="20dp"
+        android:textSize="30dp"
+        android:typeface="sans"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:textStyle="normal|italic"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/rating"
+            android:text="rating"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:typeface="sans" />
+        <TextView
+            android:id="@+id/date"
+            android:text="date"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Synopsis :"
+        android:paddingTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/synopsis"
+        android:textSize="20dp"
+        android:typeface="sans"
+        android:lineSpacingExtra="8sp"
+        android:textStyle="normal|italic"
+        android:textColor="@color/colorPrimaryDark" />
+</LinearLayout>
+</FrameLayout>

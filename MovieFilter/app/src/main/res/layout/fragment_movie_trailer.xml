@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medha.moviefilter.MovieTrailerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:layout_alignRight="@+id/imageView_trailer"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/imageView_trailer"
+            android:paddingRight="60dp"
+            android:id="@+id/year_textView"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:typeface="normal"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/duration_textView"
+            android:layout_toEndOf="@+id/imageView_trailer"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:layout_below="@+id/year_textView"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rating_textView"
+            android:layout_toEndOf="@+id/imageView_trailer"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:layout_below="@+id/duration_textView"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:text="Add to favourites"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView_trailer"
+            android:layout_below="@+id/rating_textView"
+            android:id="@+id/fav"
+            android:fontFamily="sans-serif-medium"
+            android:typeface="serif"
+            android:textSize="10sp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="260dp"
+            app:srcCompat="@drawable/sample_1"
+            android:id="@+id/imageView_trailer"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overView"
+            android:id="@+id/recyclerView_trailer"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/overView"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/imageView_trailer"
+            android:layout_below="@+id/imageView_trailer"
+            android:typeface="sans"
+            android:textStyle="normal|italic"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+
+</FrameLayout>

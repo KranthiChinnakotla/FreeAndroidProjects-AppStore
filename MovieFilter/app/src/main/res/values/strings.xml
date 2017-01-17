@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MovieFilter</string>
+    <string name="title">Settings</string>
+    <string name="fav">Show Favourites</string>
+    <string name="all">All Movies</string>
+    <string name="clear">Clear Favourites</string>
+    <array name="listValues">
+        <item>Now Playing</item>
+        <item>Popular Movies</item>
+        <item>UpComing Movies</item>
+    </array>
+    <array name="listEntries">
+        <item>Now Playing</item>
+        <item>Popular Movies</item>
+        <item>Upcoming Movies</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
